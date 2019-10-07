@@ -1,5 +1,5 @@
 {
-  "name": "sintergia-api",
+  "name": "game_of_drones_api",
   "version": "1.0.0",
   "description": "",
   "main": "index.js",
@@ -33,7 +33,6 @@
     "subscriptions-transport-ws": "^0.9.16"
   },
   "devDependencies": {
-    "nodemon": "^1.18.10",
-    "sequelize-cli": "^5.4.0"
+    "nodemon": "^1.18.10"
   }
 }

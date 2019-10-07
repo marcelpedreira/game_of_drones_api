@@ -13,4 +13,4 @@ yarn-error.log
 .editorconfig
 .sequelizerc
 /build
-.env
+# .env
