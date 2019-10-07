@@ -1,0 +1,39 @@
+version: "2"
+services:
+  api:
+    # build:
+    #   context: ./
+    #   args:
+    #     NODE_ENV: development
+    image: nodemon
+    container_name: game_of_drones_api
+    depends_on:
+      - db
+    # env_file: .env
+    environment:
+      - NODE_ENV=development
+    volumes:
+      - .:/usr/src/app
+    working_dir: /usr/src/app
+    # command: "npm start"
+    command: "npm run debug"
+    ports:
+      - "5000:5000"
+      - "5858:5858"
+    networks:
+      - backend
+
+  db:
+    image: mongo
+    container_name: game_of_drones_db
+    # volumes:
+    #   - .docker/mongodb:/data/db
+    # command:
+    #   - --storageEngine=wiredTiger
+    ports:
+      - "27017:27017"
+    networks:
+      - backend
+
+networks:
+  backend:
