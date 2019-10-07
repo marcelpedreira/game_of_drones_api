@@ -3,16 +3,13 @@ services:
   api:
     build:
       context: ./
-      args:
-        NODE_ENV: development
     image: game_of_drones_api
     container_name: game_of_drones_api
     depends_on:
       - db
-    environment:
-      - NODE_ENV=development
     volumes:
       - .:/usr/src/app
+      - /usr/src/app/node_modules
     working_dir: /usr/src/app
     command: "npm start"
     ports:

@@ -8,7 +8,6 @@
     "debug": "nodemon -L --inspect=0.0.0.0:5858 index.js --watch app.js --watch schema.js --watch resolvers.js --watch ./configuration --watch ./controllers --watch ./routes --watch ./models"
   },
   "dependencies": {
-    "bcryptjs": "^2.4.3",
     "body-parser": "^1.18.3",
     "concurrently": "^4.1.0",
     "cors": "^2.8.5",
@@ -20,16 +19,8 @@
     "graphql": "^14.3.0",
     "graphql-subscriptions": "^1.1.0",
     "graphql-tools": "^4.0.4",
-    "joi": "^14.3.1",
-    "jsonwebtoken": "^8.5.1",
     "mongoose": "^5.4.22",
     "morgan": "^1.9.1",
-    "mysql2": "^1.6.5",
-    "passport": "^0.4.0",
-    "passport-jwt": "^4.0.0",
-    "passport-local": "^1.0.0",
-    "redis": "^2.8.0",
-    "sequelize": "^5.7.1",
     "subscriptions-transport-ws": "^0.9.16"
   },
   "devDependencies": {
