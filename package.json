@@ -5,7 +5,7 @@
   "main": "index.js",
   "scripts": {
     "start": "node index.js",
-    "debug": "nodemon -L --inspect=0.0.0.0:5858 index.js --watch app.js --watch schema.js --watch resolvers.js --watch ./configuration --watch ./controllers --watch ./routes --watch ./models"
+    "debug": "nodemon -L --inspect=0.0.0.0:5858 index.js --watch app.js --watch schema.js --watch resolvers.js --watch ./controllers --watch ./models"
   },
   "dependencies": {
     "body-parser": "^1.18.3",

@@ -1,23 +1,13 @@
-const { getRecords,
-        // getRecord,
-        // updateRecord,
-        // deleteRecord,
-        updateRecord } = require('./controllers/records');
+const { getRecords, updateRecord } = require('./controllers/records');
 
 const resolvers = {
   Query: {
-    records: async () => {
-      return await getRecords();
-    },
+    records: () => getRecords()
   },
   
   Mutation: {
-    updateRecord: async (root, {record}) => {
-      return await updateRecord(record);
-    },
-
+    updateRecord: (root, {record}) => updateRecord(record)
   },
-
 };
 
 module.exports = resolvers;
