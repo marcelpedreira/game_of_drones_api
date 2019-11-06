@@ -19,7 +19,7 @@
     "graphql": "^14.3.0",
     "graphql-subscriptions": "^1.1.0",
     "graphql-tools": "^4.0.4",
-    "mongoose": "^5.4.22",
+    "mongoose": "^5.7.5",
     "morgan": "^1.9.1",
     "subscriptions-transport-ws": "^0.9.16"
   },
